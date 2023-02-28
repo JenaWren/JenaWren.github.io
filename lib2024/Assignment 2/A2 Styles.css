@@ -1,0 +1,206 @@
+/* Styles for Assignment 2 */
+
+
+/* this is my title in a box and centred */
+
+h1 {
+	text-align: center;
+  border: 5px solid hotpink;
+	border-style: solid;
+  font-family: "Courier New", monospace;
+}
+
+/* this is wrapping text around my photo*/
+
+body {
+	background-color: #CFF4FC;
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden;
+  border: 5px solid hotpink;
+  position: relative;
+  display: flex;
+}
+.col1,
+.col2 {
+  padding: 10px;
+  text-align: justify;
+  width: calc(50% + 220px);
+}
+p {
+  padding: 5px;
+  margin: 0 0 1em;
+}
+.col1:before,
+.col2:before {
+  float: right;
+  width: 1px;
+  height: 90px;
+  content: " ";
+}
+.col2:before {
+  float: left;
+}
+.img {
+  float: right;
+  clear: right;
+  margin: 20px 0 20px 20px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  shape-outside: circle(50%);
+}
+.col2 img {
+  float: left;
+  margin: 20px 20px 20px 0;
+  clear: left;
+}
+.col1 .inner {
+  margin-right: 220px;
+}
+.col2 .inner {
+  margin-left: 220px;
+}
+.col2 {
+  margin-left: -440px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrap {
+    display: block;
+  }
+  .col2:before {
+    display: none;
+  }
+  .col1,
+  .col2,
+  .col1 .inner,
+  .col2 .inner {
+    width: auto;
+    margin: 0;
+  }
+  .col2 .img {
+    display: none;
+  }
+  .img {
+    width: 50%;
+    height: auto;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col1:before {
+    display: none;
+  }
+}
+
+
+/*box model 1*/
+.box1{
+  width: 100px;
+  border: 35px;
+  padding: 30px;
+  margin: 20px;
+}
+
+/* this is the photo in the center of my page */
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+/* this is my watermark */
+.watermark {
+	position: sticky;
+}
+
+.watermark__inner {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	left: 0px;
+	position: absolute;
+	top: -250px;
+	height: 100%;
+	width: 100%;
+}
+
+.watermark__body {
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	transform: rotate(-20deg);
+	user-select: none;
+}
+
+/* box model 2 */
+.box2{
+  width: 100px;
+  border: 15px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/*this is my dashed line*/
+.dashed-line {
+  border-top: 2px dashed hotpink;
+}
+
+/* box model 3 */
+.box3{
+  width: 100px;
+  border: 15px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/* this is my image gallery */
+.main-content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5px;
+  background: lightpink;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.container {
+  height: 200px;
+  margin: 10px 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 0 1 25%;
+}
+
+
+@media (max-width: 350px) {
+  .main-content-container {
+    padding: 8px;
+  }
+  .container {
+    flex: 0 1 15%;
+  }
+}
+
+.image-caption {
+  background: whitesmoke;
+  margin: 0;
+  text-align: center;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
