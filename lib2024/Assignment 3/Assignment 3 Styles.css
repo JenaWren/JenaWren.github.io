@@ -1,0 +1,82 @@
+/* Styles for Assignment 3 */
+
+/* This is my title formatting*/
+h1 {
+	text-align: center;
+	border: 5px solid darkcyan;
+	border-style: solid;
+	font-family: "Georgia"; Serif;
+}
+
+/* Subheading formatting */
+
+h2 {
+	text-align: center;
+	font-family: "Courier New"; Monospace;
+}
+
+/*photo in centre of page */
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	border: 5px solid darkcyan;
+}
+
+/* Colour of page */ 
+body {
+	background-color:lavenderblush;
+}
+
+/* List of materials, list of abbreviations and gauge */
+
+ol {
+	list-style-type: circle;
+}
+
+/* Text above image */ 
+h4 {
+	text-align: center;
+}
+
+/* image animation - if you hover your cursor over the image of wool, it changes to an image of a dog wearing the completed sweater */
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+/* Image gallery */
+#gallery {
+   line-height:0;
+   -webkit-column-count:5; 
+   -webkit-column-gap:5px; 
+   -moz-column-count:5;
+   -moz-column-gap:5px;
+   column-count:5;
+   column-gap:5px;
+}
+
+#gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px; 
+}
+
+
